@@ -32,7 +32,10 @@ radikoのメールアドレスが`hoge@hige.com`、パスワードが`password`�
 ```
 bash rec_radiko2.sh LFR 120 hoge@hige.com password ~/Music/audrey
 ```
-を実行すれば良い。毎週土曜日の25時に起きて実行するのは非常に手間なので、ジョブを自動実行してくれるcronを用いる。その実行ファイルは`crontab -e`で設定できる。筆者は次のように設定している。
+を実行すれば良い。LINEには次のような通知が来る。
+<img src="figure/test.jpg"/>
+
+毎週土曜日の25時に起きて実行するのは非常に手間なので、ジョブを自動実行してくれるcronを用いる。その実行ファイルは`crontab -e`で設定できる。筆者は次のように設定している。
 ```
 $ crontab -l
 0 1 * * 0 bash ~/Music/audrey/rec_radiko2.sh LFR 120 hoge@hige.com password ~/Music/audrey
