@@ -6,9 +6,9 @@ def main():
     token = Lconfig.APItoken
     headers = {"Authorization" : "Bearer "+ token}
 
-    message =  'ここにメッセージを入れます'
+    message =  'オードリーのオールナイトニッポンの録音が終わりました。'
     payload = {"message" :  message}
-    files = {"imageFile": open("test.jpg", "rb")} #バイナリで画像ファイルを開きます。対応している形式はPNG/JPEGです。
+    files = {"imageFile": open("audrey.jpg", "rb")} #バイナリで画像ファイルを開きます。対応している形式はPNG/JPEGです。
 
     r = requests.post(url ,headers = headers ,params=payload, files=files)
     
