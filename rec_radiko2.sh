@@ -259,4 +259,4 @@ fi
 eyeD3 -a オードリー -A "オードリーのオールナイトニッポン" ${outdir}/${date}.mp3
 eyeD3 --add-image /home/pi/Music/audrey/audrey.jpg:FRONT_COVER ${outdir}/${date}.mp3
 
-python lin.py
+python ~/record-radiko/line.py
