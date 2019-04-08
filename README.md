@@ -5,7 +5,7 @@ http://kyoshiaki.hatenablog.com/entry/2014/05/04/184748 を参考に録音した
 raspberry piで以下のプログラムをインストールする。
 ```
 $ sudo apt-get update
-$ sudo apt-get install rtmpdump swftools libxml2-utils ffmpeg eyeD3
+$ sudo apt-get install rtmpdump swftools libxml2-utils ffmpeg eyed3
 ```
 LINEからの通知を行うために、LINE Notify( https://notify-bot.line.me/ja/ )を利用する。radiko録音のためのアクセストークンを発行し、コピーしておこう。
 
